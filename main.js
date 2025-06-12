@@ -20,6 +20,12 @@ window.addEventListener('load', async () => {
         width: 800,
         height: 600,
         parent: 'game-container',
+        physics: {
+            default: 'arcade',
+            arcade: {
+                debug: false
+            }
+        },
         scale: { mode: Phaser.Scale.FIT, autoCenter: Phaser.Scale.CENTER_BOTH },
         scene: [MenuScene, GameScene, UIScene]
     };
